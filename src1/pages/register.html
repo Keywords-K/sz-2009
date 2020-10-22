@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        i {
+            font-style: normal;
+        }
+
+        #nav {
+            width: 786px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        #nav .iMg {
+            width: 180px;
+            height: 125px;
+            margin: 0 auto;
+        }
+
+        #nav .iMg_2 {
+            position: fixed;
+            left: 402px;
+            bottom: 30px;
+        }
+
+        #nav form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #btn {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 14px;
+            margin-top: 10px;
+            background: #ff6700;
+            overflow: hidden;
+            cursor: pointer;
+            color: #e0e0e0;
+        }
+
+        #btn:hover {
+            background: rgb(255, 147, 106);
+        }
+
+        input {
+            width: 278px;
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #e0e0e0;
+        }
+
+        form p {
+            line-height: 20px;
+            font-size: 14px;
+            color: #2d3331;
+            padding-top: 50px;
+        }
+
+        form .p2 {
+            line-height: 20px;
+            font-size: 14px;
+            color: #2d3331;
+            padding-top: 20px;
+        }
+
+        form i {
+            font-size: 14px;
+            color: #6a6760;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: #6a6760;
+            font-size: 14px;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            padding-top: 70px;
+        }
+
+        #nav .iN {
+            color: rgb(51, 51, 51);
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="iMg"><img src="./images/注册小米.jpg" alt=""></div>
+
+        <form action="http://localhost/src1/pages/register.php" method="POST">
+            <p>国家/地区</p>
+            <input type="text" placeholder="中国" name="username">
+            <br>
+            <i>成功注册账号后，国家/地区将不能被修改</i>
+            <p class="p2">手机号码</p>
+            <input type="text" placeholder="请输入手机号码" name="password">
+            <br>
+            <input type="submit" id="btn" value="立即注册">
+        </form>
+
+        <div class="A_a"><a href="#">已阅读并同意：小米<i class="iN">用户协议</i>和<i class="iN">隐私政策</i></a></div>
+        <img src="./images/版权号.jpg" alt="" class="iMg_2">
+    </div>
+</body>
+
+</html>
