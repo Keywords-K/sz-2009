@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 用群组选择符,把7个选择符组合在一起 */
+
+        ul,li{list-style: none;}
+        #logo,#nav,#banner,#news,.case,#links,#bottomWrap{width:100%;height: 100%;margin:0 auto;}
+/* logo */
+        #logo{height:100px;width:100%;float: left;border-bottom: 2px solid coral;float: left;}
+        #logo img{width: 100%;height: 100%;}
+        #logo .logoleft{max-width: 50px;max-height: 50px;background: red;float: left;margin-top: 25px;margin-left: 50px;}
+        #logo h1{max-width: 200px;max-height: 40px;line-height: 40px;margin-left: 50px;margin-top: 30px;float: left;}
+
+        .box{width: 200px;height: 50px;margin-left: 500px;float: left;margin-top: 25px;margin-left: 700px;}
+        .box li{width: 60px;height: 30px; line-height: 30px;font-size: 14px;float: left;text-align: center;} 
+
+/* banner */
+        #banner{height:800px;width: 90%;margin-top: 0;margin-left: 5%; float: left;}
+
+        #banner .fdj{max-width: 400px;height: 400px;background: grey;margin-top: 10px;margin-left: 0;float: left;}
+        .s_box{width: 400px;height: 400px;position: relative;left:0;top:0;border: 1px solid #a0a0a0;}
+        .s_box img{width: 400px;height: 400px;}
+        .s_box span{position: absolute;left: 0;top:-20px;background:rgba(200,200,200,0.6);display: none;}
+        .b_box{position: absolute;left:500px;top:120px;width: 400px;height: 400px;display: none;overflow: hidden;}
+        .b_box img{width: 1200px;height: 900px;position: absolute;left:0;top:0;}
+        .list{width: 600px;height:100px; position: relative;left: 10px;top:20px;display: flex;margin: 0;padding: 0;list-style: none;}
+        .list li{margin: 0 5px;cursor:pointer;}
+        .list img{width: 100px;}
+        /* .list img:hover{border: 1px solid sandybrown;} */
+
+        .date{max-width: 60%;height:600px;float: left; top: 0;margin-left: 79px;float: left;}
+        /* .right{width: 19%;height: 100%;float: left;background: violet;margin-left: 25px;} */
+        h2{height:40px;line-height:40px;text-align: left;font-size: 20px;float: left;}
+        span{height: 40px;line-height: 40px;font-size: 16px;float: left;margin-top: 10px;color: sandybrown;float: left;}
+        .imgbox{height: 100px;background: yellow;float: left;}
+         img{width: 100%;height: 110%;}
+        .imgbox2{height: 150px;width: 80%; background: violet;float: left;margin: 20px auto;}
+
+        /* #shopCart{float: left;width:150px;height: 40px;font-size: 20px;color: papayawhip; 
+        background: red;line-height: 40px;margin-top: 50px;margin-left: 50px;text-align: center;cursor:pointer;} */
+
+        #shopNum{width: 50px;height: 40px;float: left;background:turquoise;
+        margin-left: 20px;margin-top: 50px;line-height: 40px;font-size: 20px;text-align: center;cursor:pointer;}
+        
+        #addToCart {  
+            /* position: fixed;  */
+            position: relative;
+            left: 200px;  
+            cursor: pointer;  
+            background: red;
+            width: 150px;  
+            height: 50px;  
+            line-height: 50px;  
+          
+            text-align: center;  
+            font-size:24px;
+            color:aliceblue;  
+            margin-top: 450px;
+        }  
+        .active{
+        	width: 20px;
+        	height: 20px;
+        	background: skyblue;
+        	position: absolute;
+        }
+        #shopCart {  
+            position: fixed;  
+            right: 0;  
+            top: 200px;  
+            color: red;  
+        }  
+    </style>
+</head>
+<body>
+    <!-- logo -->
+    <div id="logo">
+        <div class="logoleft">
+            <a href="http://localhost/src1/pages/XM.html"><img src="./images/小米图标2.png" alt=""></a>
+        </div>
+        <h1>我的购物车</h1>
+        <ul class="box">
+            <li>
+                <a href="#" >账户 ∨ </a>  
+            </li>
+            <li> <a href="#" > | </a> </li>
+            <li>
+                <a href="#">我的订单</a>   
+            </li>
+        </ul>   
+    </div>
+        
+
+    <!-- banner -->
+    <div id="banner">
+        <div class="fdj">
+            <div class="s_box">
+                <img src="../MG/5.jpg" alt="">
+                <span></span>
+            </div>
+            <div class="b_box">
+                <img src="../MG/5.jpg" alt="">
+            </div>
+            <ul class="list">
+                <li>
+                    <img src="../MG/5.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../MG/1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../MG/7.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../MG/6.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <div class="date">
+            <h2>【向往的生活同款】小米10 双模5G 骁龙865 1亿像素8K电影相机 对称式立体声 8GB+256GB 钛银黑</h2>
+            <span>小米10限时特惠，尊享白条12期免息，骁龙865处理器领赠品送10万京豆/2400G流量</span>
+            <div class="imgbox">
+                <img src="../MG/9.png" alt="">
+            </div>
+            <div class="imgbox2">
+                <img src="../MG/10.png" alt="">
+            </div>
+
+            <div id="addToCart">加入购物车</div>
+
+            <div id="shopCart">  
+              <a href="http://localhost/src1/pages/cart.html"><p id="shopNum"></p></a> 
+            </div> 
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+    //1. 放大镜部分
+     class Magnifier{
+        constructor(){
+            // 选择元素
+            this.Sbox = document.querySelector(".s_box");
+            this.Simg = document.querySelector(".s_box img");
+            this.span = document.querySelector(".s_box span");
+            this.Bbox = document.querySelector(".b_box");
+            this.Bimg = document.querySelector(".b_box img");
+
+            this.abtn = document.querySelectorAll(".list li");
+
+            // 绑定事件
+            this.addEvent();
+        }
+        addEvent(){
+            var that = this;
+            this.Sbox.onmouseover = function(){
+                that.over();
+            }
+            this.Sbox.onmouseout = function(){
+                that.out();
+            }
+            this.Sbox.onmousemove = function(eve){
+                var e = eve || window.event;
+                that.move(e);
+            }
+            // 给所有的li添加点击事件
+            for(var i=0;i<this.abtn.length;i++){
+                this.abtn[i].onmouseover = function(){
+                    // 点击时，准备修改图片地址，记得将当前点击的元素传入
+                    that.changeImg(this);
+                }
+            }
+        }
+        changeImg(ele){
+            // 根据当前点击的元素的子元素(img)的src，切换图片
+            this.Simg.src = this.Bimg.src = ele.children[0].src;
+        }
+        over(){
+            this.span.style.display = "block";
+            this.Bbox.style.display = "block";
+
+            // span宽高比例：根据右侧大图和显示区域计算得来
+            var spanW = this.Bimg.offsetWidth / this.Bbox.offsetWidth;
+            var spanH = this.Bimg.offsetHeight / this.Bbox.offsetHeight;
+            // console.log(spanW,spanH)
+            // 根据宽高比例，设置span的真正宽高
+            this.span.style.width = this.Sbox.offsetWidth / spanW + "px";
+            this.span.style.height = this.Sbox.offsetHeight / spanH + "px";
+        }
+        out(){
+            this.span.style.display = "none";
+            this.Bbox.style.display = "none";
+        }
+        move(e){
+            // 鼠标相对于页面的坐标 - sBox左边的位置 - span宽度的一半
+            var l = e.pageX - this.Sbox.offsetLeft - this.span.offsetWidth/2;
+            var t = e.pageY - this.Sbox.offsetTop - this.span.offsetHeight/2;
+
+            // 边界限定
+            if(l<0) l=0;    // left
+            if(t<0) t=0;    // top
+            // right
+            if(l > this.Sbox.offsetWidth - this.span.offsetWidth){
+                l = this.Sbox.offsetWidth - this.span.offsetWidth
+            }
+            // bottom
+            if(t > this.Sbox.offsetHeight - this.span.offsetHeight){
+                t = this.Sbox.offsetHeight - this.span.offsetHeight
+            }
+
+            // 设置span的位置
+            this.span.style.left = l + "px";
+            this.span.style.top = t + "px";
+
+            // 计算span在sBox中的移动比例
+            var x = l / (this.Sbox.offsetWidth - this.span.offsetWidth);
+            var y = t / (this.Sbox.offsetHeight - this.span.offsetHeight);
+            // console.log(x, y);
+
+            // 根据比例设置右侧大图的移动位置
+            this.Bimg.style.left = x * (this.Bbox.offsetWidth - this.Bimg.offsetWidth) + "px";
+            this.Bimg.style.top =  y * (this.Bbox.offsetHeight - this.Bimg.offsetHeight) + "px";
+        }
+    }
+    new Magnifier;
+
+    //2.购物车
+      /*
+        需求分析:
+            1 点击添加都购物车,显示一个代表商品的小方块
+            2 小方块会沿着抛物线运动到购物车中
+            3 到达购物车以后,小方块消失,shopNum的数量增加1
+        */
+
+        //获取相关元素
+        var addToCart = document.getElementById('addToCart');//添加到购物车按钮
+        var shopCart = document.getElementById('shopCart');//购物车
+        var shopNum = document.getElementById('shopNum');//显示商品数量的容器
+        var num = 0;//商品数量
+
+        //生成一个小方形,但是要隐藏        
+        var product = document.createElement('div');
+        product.className = 'active';
+        document.body.appendChild(product);
+        product.style.left = addToCart.offsetLeft+addToCart.offsetWidth/2+"px";
+        product.style.top = addToCart.offsetTop - product.offsetHeight+"px";
+        product.style.display = "none";
+        //三点确定抛物线的a,b,c系数
+        var startPoint = {
+			x:addToCart.offsetLeft+addToCart.offsetWidth/2,
+			y:addToCart.offsetTop - product.offsetHeight
+		}
+		var endPoint = {
+			x:shopCart.offsetLeft+shopCart.offsetWidth/2,
+			y:shopCart.offsetTop
+		}
+		var topPoint = {
+			x:endPoint.x-80,
+			y:endPoint.y-50
+		}	
+		//三点求a,b,c系数:y = a*x*x+b*x+c;
+		var a = ((startPoint.y - endPoint.y) * (startPoint.x - topPoint.x) - (startPoint.y - topPoint.y) * (startPoint.x - endPoint.x)) / ((startPoint.x * startPoint.x - endPoint.x * endPoint.x) * (startPoint.x - topPoint.x)-(startPoint.x * startPoint.x - topPoint.x * topPoint.x) * (startPoint.x - endPoint.x));  
+		var b = ((endPoint.y - startPoint.y) - a * (endPoint.x * endPoint.x - startPoint.x * startPoint.x)) / (endPoint.x - startPoint.x);  
+		var c = startPoint.y - a * startPoint.x * startPoint.x - b * startPoint.x;
+        //点击添加都购物车,显示一个代表商品的小方块
+        addToCart.onclick = function(){
+            product.style.display = "block";
+            //小方块会沿着抛物线运动到购物车中
+            clearInterval(product.timer);
+            product.timer = setInterval(function(){
+                //抛物线:y 
+                var x = product.offsetLeft+10;
+                var y = a*x*x+b*x+c;
+                product.style.left = x+"px";
+                product.style.top = y+"px";
+                if(x>=endPoint.x){
+                    //商品到达购物车位置附近
+                    //隐藏商品,把商品坐标定位到初始位置
+                    product.style.display = "none";
+                    product.style.left = addToCart.offsetLeft+addToCart.offsetWidth/2+"px";
+                    product.style.top = addToCart.offsetTop - product.offsetHeight+"px";  
+                    //商品数量增加
+                    num++;
+                    shopNum.innerHTML = num;           
+                    clearInterval(product.timer)
+                }
+            },20)
+        }
+</script>
+</html>

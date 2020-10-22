@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul,li,ol{list-style: none;}
+/* head */
+        .nav{height:98px;width: 100%;background: #ffffff;float: left;}
+        /* .head{height: 80px;width: 200px;margin-top: 10px;float: left; margin-left: 20px;} */
+        .nav ul{width: 80px;height: 80px;float: left;margin-left: 110px;}
+        .nav img{width: 200px;height: 98px;border-radius: 5px;}
+        /* span{font-size: 14px;} */
+        /* h1{font-size: 45px;} */
+/* bannner */
+        .banner img{height:100%;width: 100%;}
+        .banner .imgbox{height: 500px;width:100%;;background: url(./images/轮播图登录.png);float: left;background-repeat:no-repeat;}
+        .banner .imgbox .box{height: 450px;width: 25%;background: #ffffff;float: right;margin-top: 50px;margin-right: 10%;}
+
+        .box .logo{width: 100%;height: 20%;}
+
+        h2{display:block;width:100px;height:30px;text-align: center;line-height:40px;font-size:20px;float: left;margin-top: 30px;margin-left: 8px;}
+        .box .logo h2:hover{color: coral;cursor: pointer;}
+        input{width: 80%;margin: 0 auto;padding: 10px;font-size: 16px;margin-left: 20px;margin-bottom: 10px;border: 1px solid #e0e0e0;}
+
+        .box #btn{width: 87%;margin: 0 auto;font-size: 20px;margin-top: 10px;margin-left: 20px;background:#ff6700;overflow: hidden;cursor: pointer;}
+
+        .box .box2{width: 40%;height:30px; float: left;line-height: 30px;text-align: center;font-size: 14px;color:#ff6700 ;cursor: pointer;}
+        .box .box3{width: 45%;height:30px;float:right;line-height: 30px;text-align: center;font-size: 14px;}
+        .box .box3 .box3_1{color: #666666;text-decoration:none;}
+        .box .box3 .box3_2{color: #666666;text-decoration:none;}
+        .box .box3 .box3_1:hover{color: #ff6700;}
+        .box .box3 .box3_2:hover{color: #ff6700;}
+
+        .box .box4{width: 100%;height: 165px;float: left;}
+        .box img{width: 100%;height: 81px;}
+
+
+/* foot */
+.foot{height: 200px;width: 100%;margin-bottom: 0;float: left;}
+.foot .box{width: 500px;height: 30px;margin: 30px auto 20px;}
+.foot .box li{display:block;width:100px;height:30px;text-align: center;line-height:30px;font-size:16px;float: left;}
+.foot .box li .sep{float: right;}
+.foot .box li a{text-decoration:none;color: #666666;}
+.foot .box li a:hover{color: #333333;}
+.foot h4{height: 30px;width: 100%;float: left; line-height: 30px; font-size: 16px; text-align: center;color: #666666;}
+    </style>
+</head>
+<body>
+    <!-- 禁止选中 -->
+    <body leftmargin=0 topmargin=0  ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'></body>
+    
+    <div id="nav-na">
+        <div class="nav">
+            <ul>
+                <a href="http://localhost/src1/pages/XM.html"><img src="./images/小米图标.jpg" alt=""></a>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="imgbox">
+                <div class="box">
+                    <div class="logo">
+                        <h2>账号登录</h2>
+                        <h2>|</h2>
+                        <h2>扫码登录</h2>
+                    </div>
+                    <form action="http://localhost/src1/pages/login.php">
+                        <input type="text" placeholder="邮箱/手机号码/小米ID" name="username">
+                        <input type="text" placeholder="密码" name="password">
+                        <input type="submit" id="btn" value="登录" />
+                    </form>
+                    <!-- <input type="text" placeholder="邮箱/手机号码/小米ID">
+                    <input type="text" placeholder="密码">
+                    <input type="button" name="button" id="btn" value="登录" /> -->
+
+                    <div class="box2">手机短信登录/注册</div>
+                    <p class="box3">
+                        <a href="http://localhost/src1/pages/register.html" class="box3_1">立即注册</a>
+                         | 
+                        <a class="box3_2" href="https://account.xiaomi.com/pass/forgetPassword?callback=http%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252F%26sign%3DNzY3MDk1YzczNmUwMGM4ODAxOWE0NjRiNTU5ZGQyMzFhYjFmOGU0Nw%2C%2C&sid=mi_eshop&_bannerBiz=mistore&_qrsize=180">忘记密码？</a>
+                    </p>
+                    <div class="box4">
+                        <img src="./images/登入.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+           
+        <div class="foot">
+            <ul class="box">
+                <li>
+                    <a href="#" >简体</a>
+                    <span class="sep">|</span>
+                </li>
+                <li>
+                    <a href="#">繁体</a>
+                    <span class="sep">|</span>
+                </li>
+                <li>
+                    <a href="#">English</a>
+                    <span class="sep">|</span>
+                </li>
+                <li>
+                    <a href="#">常见问题</a>
+                    <span class="sep">|</span>
+                </li>
+                <li>
+                    <a href="#">隐私政策</a>
+                </li>
+                
+            </ul>
+            <h4>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
